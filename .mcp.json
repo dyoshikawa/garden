@@ -4,8 +4,8 @@
       "command": "npx",
       "args": ["o3-search-mcp"],
       "env": {
-        "SEARCH_CONTEXT_SIZE": "medium",
-        "REASONING_EFFORT": "medium"
+        "SEARCH_CONTEXT_SIZE": "low",
+        "REASONING_EFFORT": "low"
       },
       "targets": ["claudecode", "cursor", "copilot"]
     }
