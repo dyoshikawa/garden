@@ -1,0 +1,24 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "simple-git-hooks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "10.2.0",
+    "lint-staged": "16.1.2",
+    "secretlint": "10.2.0",
+    "simple-git-hooks": "2.13.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "type": "module"
+}
